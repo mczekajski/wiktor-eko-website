@@ -1,0 +1,225 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    min-width: 1024px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111111;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    background-color: #000000;
+    width: 100%;
+    min-width: 1024px;
+}
+
+main {
+    position: relative;
+    top: 32px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    color: aliceblue;
+    background-color: #444444;
+    width: 100%;
+    height: 32px;
+    font-size: 16px;
+    z-index: 10;
+    max-width: 1920px;
+    margin: auto;
+}
+
+nav > ul {
+    padding-top: 6px;
+    display: inherit;
+}
+
+nav > ul > li {
+    border-right: 1px dotted aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0;
+    float: left;
+    list-style: none;
+}
+
+article > ul {
+    max-width: 720px;
+    margin: 20px auto; 
+}
+
+article > ul > li {
+    max-width: 720px;
+    margin: 5px auto; 
+
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s ease-out;
+}
+
+a:hover {
+    color: deepskyblue;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Amiri', cursive;
+    font-size: 400%;
+    color: aliceblue;
+    width: 90%;
+    padding: 5%;
+    margin-top: 0;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 10px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Amiri', cursive;
+    font-size: 200%;
+    color: aliceblue;
+    width: 80%;
+    margin: auto;
+}
+
+button,
+button:active,
+button:visited,
+button:focus {
+    width: 200px;
+    height: 80px;
+    margin-top: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    border: 5px;
+    border-color: black;
+    color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: gray;
+    outline: none;
+    opacity: 0.8;
+    transition: 1s ease;
+    animation: buttonPulse 2s infinite linear;
+}
+
+button:hover {
+    animation: none;
+    background-color: deepskyblue;
+}
+
+article {
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+p {
+    max-width: 720px;
+    margin: 20px auto;
+}
+
+footer {
+    height: 100px;
+    background-color: #333333;
+}
+
+.top {
+    padding-top: 32px;
+    background-image: url("plant.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.ofirmie {
+    background-color: #004c66;
+    color: aliceblue;
+    width: 100%;
+    padding-bottom: 2%;
+    text-align: justify;
+}
+
+.wykaz {
+    background-color: aliceblue;
+    width: 100%;
+}
+
+.listyref {
+    background-color: lightseagreen;
+    width: 100%;
+}
+
+.photo {
+    height: 160px;
+    float: right;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-icon {
+    float: left;
+    color: whitesmoke;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+#logo {
+    float: right;
+    width: 100px;
+    margin-right: 0;
+    font-size: 16px;
+    color: aliceblue;
+}
+
+@keyframes buttonPulse {
+    0% {
+        background-color: #99e5ff
+    }
+    50% {
+        background-color: #79a9b9
+    }
+    100% {
+        background-color: #99e5ff
+    }
+}
+
+.refphoto {
+    height: 320px;
+    transition: all 0.2s ease-in-out;
+}
+
+.refphoto:hover
+{
+	-webkit-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
