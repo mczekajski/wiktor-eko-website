@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 100vw;
+    max-width: 1920px;
+    background-color: #ffffff;
+}
+
+.banner {
+
+}
+
+.banner__video {
+    width: 100%;
+}
