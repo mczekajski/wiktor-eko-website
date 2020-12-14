@@ -13,22 +13,78 @@
 html {
     width: 100vw;
     max-width: 100%;
+    font-size: 62.5%;
 }
 
 .page {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
     line-height: 23px;
     font-weight: 400;
     color: var(--light-text-color);
-
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: #ffffff;
 }
 
+.btn {
+    line-height: 23px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: .5s;
+    width: 100%;
+}
+
+.btn--white-to-black {
+    border: 2px solid var(--dark-text-color);
+    background-color: white;
+    color: var(--dark-text-color);
+}
+.btn--white-to-black:hover {
+    background-color: var(--dark-text-color);
+    color: white;
+}
+
+.btn--green-to-white {
+    border: 2px solid var(--main-color);
+    border-color: var(--main-color);
+    background-color: var(--main-color);
+    color: white;
+}
+.btn--green-to-white:hover {
+    border: 2px solid var(--main-color);
+    border-color: var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+
+.description {
+    font-size: 1.5rem;
+    color: var(--light-text-color);
+}
+
 .heading--large {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--dark-text-color);
+}
+
+.heading--medium {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--dark-text-color);
+}
+
+.heading--small {
     font-size: 2rem;
     font-weight: 500;
     color: var(--dark-text-color);
@@ -37,7 +93,6 @@ html {
 .heading--large--green {
     color: var(--main-color);
 }
-
 
 .header {
     display: flex;
@@ -145,17 +200,19 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .heading--large {
     text-align: center;
-    padding: 20px;
     line-height: 40px;
+    margin-bottom: 10px;
 }
 
 .banner__description {
-    padding: 20px;
     text-align: center;
+    margin: 15px 0;
 }
 
 @media (min-width: 769px) {
