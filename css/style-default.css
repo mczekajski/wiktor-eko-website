@@ -29,6 +29,24 @@ html {
     background-color: #ffffff;
 }
 
+.banner__video {
+    width: 100%;
+}
+
+.banner__window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid var(--light-border);
+}
+
+.banner__description {
+    text-align: center;
+    margin: 15px 0;
+}
+
 .btn {
     line-height: 23px;
     display: block;
@@ -99,16 +117,20 @@ html {
 
 .container--contact {
     background: var(--main-color) url(../assets/img/cta-bg.png) no-repeat bottom center;
+    background-size: cover;
     color: white;
     padding: 3.5rem 2rem;
+    margin: 0;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 
 .container--footer {
+    background-color: var(--light-border);
     padding: 2rem;
     text-align: center;
+    margin: 0;
 }
 
 .description {
@@ -171,11 +193,17 @@ html {
 }
 
 .header__nav-menu {
-    display: none;
-    justify-content: space-around;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 60vw;
+    background-color: white;
+    width: 100%;
+    top: 10rem;
+    line-height: 4rem;
     list-style: none;
+    z-index: 1;
+    padding: 2rem 0;
 }
 
 .header__nav-menu-link {
@@ -234,6 +262,7 @@ html {
     font-weight: 500;
     color: var(--dark-text-color);
     padding: 2rem 0;
+    margin-top: 2rem;
 }
 
 .heading--large {
@@ -250,30 +279,30 @@ html {
     color: var(--main-color);
 }
 
-.banner__video {
-    width: 100%;
-}
-
-.banner__window {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 20px;
-    border-bottom: 1px solid var(--light-border);
-}
-
-.banner__description {
-    text-align: center;
-    margin: 15px 0;
-}
 
 .image {
     width: 100%;
 }
 
+.link {
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.link--services {
+    margin: 1rem 0 0 0;
+}
+
 .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 2rem;
+}
+
+.services__service {
+    display: flex;
+    flex-direction: column;
 }
 
 .services__content {
@@ -282,7 +311,6 @@ html {
     padding: 3rem;
 }
 
-.services__link {
-    color: var(--main-color);
-    margin: 1rem 0 0 0;
+.hidden {
+    display: none;
 }

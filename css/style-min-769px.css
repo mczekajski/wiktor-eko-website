@@ -1,7 +1,6 @@
 @media only screen and (min-width: 769px) {
     .header__small-contact-bar {
         justify-content: flex-end;
-        margin-right: 100px;
     }
 
     .header__contactData {
