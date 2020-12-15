@@ -43,6 +43,23 @@ html {
     cursor: pointer;
     transition: .5s;
     width: 100%;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn--small {
+    width: 200px;
+}
+
+.btn--white-to-green {
+    border: 2px solid white;
+    background-color: white;
+    color: var(--dark-text-color);
+}
+
+.btn--white-to-green:hover {
+    background-color: var(--main-color);
+    color: white;
 }
 
 .btn--white-to-black {
@@ -50,6 +67,7 @@ html {
     background-color: white;
     color: var(--dark-text-color);
 }
+
 .btn--white-to-black:hover {
     background-color: var(--dark-text-color);
     color: white;
@@ -61,6 +79,7 @@ html {
     background-color: var(--main-color);
     color: white;
 }
+
 .btn--green-to-white:hover {
     border: 2px solid var(--main-color);
     border-color: var(--main-color);
@@ -68,23 +87,42 @@ html {
     color: var(--main-color);
 }
 
-.description {
-    font-size: 1.5rem;
-    color: var(--light-text-color);
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
 }
 
-.heading--medium {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: var(--dark-text-color);
+.container--description {
     padding: 2rem;
 }
 
-.heading--small {
-    font-size: 2rem;
-    font-weight: 500;
-    color: var(--dark-text-color);
-    margin: 0 0 19px 0;
+.container--contact {
+    background: var(--main-color) url(../assets/img/cta-bg.png) no-repeat bottom center;
+    color: white;
+    padding: 3.5rem 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.container--footer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: var(--light-text-color);
+    margin: 15px 0;
+}
+
+.description--white {
+    color: white;
+}
+
+.description--footer {
+    line-height: 3rem;
 }
 
 .header {
@@ -184,13 +222,31 @@ html {
     padding: 0 10px;
 }
 
+.heading--small {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--dark-text-color);
+    margin: 0 0 19px 0;
+}
+
+.heading--medium {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--dark-text-color);
+    padding: 2rem 0;
+}
+
 .heading--large {
     text-align: center;
     line-height: 40px;
     margin-bottom: 10px;
 }
 
-.heading--large--green {
+.heading--white {
+    color: white;
+}
+
+.heading--green {
     color: var(--main-color);
 }
 
@@ -207,7 +263,6 @@ html {
     border-bottom: 1px solid var(--light-border);
 }
 
-
 .banner__description {
     text-align: center;
     margin: 15px 0;
@@ -217,18 +272,8 @@ html {
     width: 100%;
 }
 
-p.description {
-    margin: 15px 0;
-}
-
 .services {
     padding: 2rem;
-}
-
-.services__service {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 3rem;
 }
 
 .services__content {
@@ -239,5 +284,5 @@ p.description {
 
 .services__link {
     color: var(--main-color);
-    margin: 25px 0 0 0;
+    margin: 1rem 0 0 0;
 }
