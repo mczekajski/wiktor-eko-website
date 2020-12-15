@@ -1,0 +1,8 @@
+@media only screen and (min-width: 1121px) {
+    .header__nav-menu {
+        display: flex;
+    }
+    .header__menu-btn {
+        display: none;
+    }
+}

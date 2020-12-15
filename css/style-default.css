@@ -2,6 +2,7 @@
     --main-color: #329830;
     --dark-text-color: #3b383a;
     --light-text-color: #777777;
+    --light-border: #eaeaea;
 }
 
 * {
@@ -83,7 +84,7 @@ html {
     font-size: 2rem;
     font-weight: 500;
     color: var(--dark-text-color);
-    padding: 2rem;
+    margin: 0 0 19px 0;
 }
 
 .header {
@@ -102,7 +103,7 @@ html {
     padding: 0;
     flex-direction: row;
     justify-content: center;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid var(--light-border);
 }
 
 .header__contactData {
@@ -203,7 +204,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 40px 20px;
-    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid var(--light-border);
 }
 
 
@@ -214,56 +215,29 @@ html {
 
 .image {
     width: 100%;
-
 }
 
 p.description {
-
+    margin: 15px 0;
 }
 
 .services {
     padding: 2rem;
 }
 
-@media (min-width: 769px) {
-    .header__small-contact-bar {
-        justify-content: flex-end;
-        margin-right: 100px;
-    }
-
-    .header__contactData {
-        display: block;
-        padding-left: 10px;
-    }
-
-    .header__link {
-        display: flex;
-        align-items: center;
-        color: var(--dark-text-color);
-        text-decoration: none;
-    }
-
-    .header__link--tel {
-        background: url(../assets/img/phone.svg) no-repeat center left;
-        background-size: 16px 16px;
-    }
-    
-    .header__link--mail {
-        background: url(../assets/img/mail.svg) no-repeat center left;
-        background-size: 16px 16px;
-    }
-
-    .header__logo {
-        width: 220px;
-    }
+.services__service {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
 }
-@media (min-width: 1121px) {
-    .header__nav-menu {
-        display: flex;
-    }
-    .header__menu-btn {
-        display: none;
-    }
+
+.services__content {
+    border: 1px solid var(--light-border);
+    border-top: 0;
+    padding: 3rem;
 }
-@media (min-width: 1367px) {}
-@media (min-width: 1920px) {}
+
+.services__link {
+    color: var(--main-color);
+    margin: 25px 0 0 0;
+}
