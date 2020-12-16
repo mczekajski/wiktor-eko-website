@@ -17,6 +17,14 @@ html {
     font-size: 62.5%;
 }
 
+a, div, img {
+    display: block;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
 .page {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
@@ -199,7 +207,7 @@ html {
     align-items: center;
     background-color: white;
     width: 100%;
-    top: 10rem;
+    top: 11rem;
     line-height: 4rem;
     list-style: none;
     z-index: 1;
@@ -280,7 +288,6 @@ html {
     color: var(--main-color);
 }
 
-
 .image {
     width: 100%;
 }
@@ -292,6 +299,14 @@ html {
 
 .link--services {
     margin: 1rem 0 0 0;
+    transition: .4s;
+}
+.link--services:hover {
+    color: var(--dark-text-color);
+}
+
+.link--services img:hover {
+    opacity: 0.2;
 }
 
 .services {
@@ -301,9 +316,15 @@ html {
     padding: 2rem;
 }
 
-.services__service {
-    display: flex;
-    flex-direction: column;
+.services__image-container {
+    background-color: var(--main-color);
+}
+
+.services__image {
+    transition: .4s;
+}
+.services__image:hover {
+    opacity: .2;
 }
 
 .services__content {
@@ -311,6 +332,12 @@ html {
     border-top: 0;
     padding: 3rem;
 }
+
+.services__service {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .hidden {
     display: none;

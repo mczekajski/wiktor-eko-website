@@ -7,6 +7,7 @@
         align-items: center;
         width: 60vw;
         top: 0;
+        border: none;
     }
     .header__menu-btn {
         display: none;
