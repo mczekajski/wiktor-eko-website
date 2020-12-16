@@ -17,7 +17,7 @@ html {
     font-size: 62.5%;
 }
 
-a, div, img {
+div, img {
     display: block;
 }
 
