@@ -25,6 +25,10 @@ a:focus {
     outline: thin dotted;
 }
 
+.about__image {
+    margin-bottom: 2rem;
+}
+
 .page {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
@@ -164,16 +168,6 @@ a:focus {
     align-items: center;
 }
 
-.header__small-contact-bar {
-    display: flex;
-    width: 100%;
-    height: 40px;
-    padding: 0;
-    flex-direction: row;
-    justify-content: center;
-    border-bottom: 1px solid var(--light-border);
-}
-
 .header__contactData {
     display: none;
 }
@@ -183,20 +177,19 @@ a:focus {
     width: 100vw;
     padding: 10px 0;
     max-width: 100%;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__logo {
     width: 160px;
-    margin-left: 20px;
 }
 
 .header__menu-btn {
-    width: 50px;
+    width: 35px;
     height: 50px;
     background: url(../assets/img/menu.svg) no-repeat center left;
     background-size: 35px 35px;
-    margin-right: 10px;
     cursor: pointer;
 }
 
@@ -208,10 +201,11 @@ a:focus {
     background-color: white;
     width: 100%;
     top: 11rem;
+    left: 0;
     line-height: 4rem;
     list-style: none;
     z-index: 1;
-    padding: 2rem 0 1rem 0;
+    padding: 1rem 0 1rem 0;
     border-bottom: 1px solid var(--light-border);
 }
 
@@ -227,43 +221,52 @@ a:focus {
 }
 
 .header__link {
-    padding: 0;
-    margin-right: 5px;
     color: var(--dark-text-color);
     text-decoration: none;
+    padding: 0 1rem;
+    margin-left: 1rem;
+
 }
 
 .header__link--tel {
     background: url(../assets/img/phone.svg) no-repeat center left;
     background-size: 20px 20px;
-    padding: 0 10px;
-    margin-left: 10px;
+
 }
 
 .header__link--mail {
     background: url(../assets/img/mail.svg) no-repeat center left;
     background-size: 20px 20px;
-    padding: 0 10px;
+
 }
 
 .header__link--fb {
     background: url(../assets/img/fb.svg) no-repeat center left;
     background-size: 20px 20px;
-    padding: 0 10px;
     margin-left: 20px;
 }
 
 .header__link--linkedin {
     background: url(../assets/img/linkedin.svg) no-repeat center left;
     background-size: 20px 20px;
-    padding: 0 10px;
+}
+
+.header__small-contact-bar {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--light-border);
 }
 
 .heading--small {
     font-size: 2rem;
     font-weight: 500;
     color: var(--dark-text-color);
-    margin: 0 0 19px 0;
+    margin-bottom: 1rem;
 }
 
 .heading--medium {
@@ -271,7 +274,6 @@ a:focus {
     font-weight: 500;
     color: var(--dark-text-color);
     padding: 2rem 0;
-    margin-top: 2rem;
 }
 
 .heading--large {
@@ -295,6 +297,10 @@ a:focus {
 .link {
     color: var(--main-color);
     font-weight: 600;
+}
+
+.link--image {
+    display: flex;
 }
 
 .link--services {
@@ -336,8 +342,25 @@ a:focus {
 .services__service {
     display: flex;
     flex-direction: column;
+    margin: 1rem 0;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0 2rem;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1300px;
+}
+.wrapper--content-centered {
+    justify-content: center;
+}
+
+.wrapper--menu-bar {
+    justify-content: space-between;
+}
 
 .hidden {
     display: none;

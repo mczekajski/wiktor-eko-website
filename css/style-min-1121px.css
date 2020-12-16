@@ -3,12 +3,17 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: flex-end;
         align-items: center;
         width: 60vw;
         top: 0;
         border: none;
     }
+
+    .header__nav-menu-link {
+        margin-left: 4rem;
+    }
+
     .header__menu-btn {
         display: none;
     }

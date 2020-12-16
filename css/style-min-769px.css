@@ -1,10 +1,6 @@
 @media only screen and (min-width: 769px) {
-    .header__small-contact-bar {
-        justify-content: flex-end;
-    }
-
     .header__contactData {
-        display: block;
+        display: flex;
         padding-left: 10px;
     }
 
@@ -27,5 +23,9 @@
 
     .header__logo {
         width: 220px;
+    }
+
+    .wrapper--content-centered {
+        justify-content: flex-end;
     }
 }
