@@ -25,10 +25,6 @@ a:focus {
     outline: thin dotted;
 }
 
-.about__image {
-    margin-bottom: 2rem;
-}
-
 .page {
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;
@@ -39,6 +35,21 @@ a:focus {
     flex-direction: column;
     width: 100%;
     background-color: #ffffff;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.about__image {
+    margin-bottom: 2rem;
+}
+
+.about__wrapper {
+    max-width: 1300px;
 }
 
 .banner__video {
@@ -121,10 +132,6 @@ a:focus {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5rem;
-}
-
-.container--description {
-    padding: 2rem;
 }
 
 .container--contact {
@@ -267,6 +274,7 @@ a:focus {
     font-weight: 500;
     color: var(--dark-text-color);
     margin-bottom: 1rem;
+    min-height: 4rem;
 }
 
 .heading--medium {
@@ -319,7 +327,7 @@ a:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    margin: 2rem;
 }
 
 .services__image-container {
@@ -347,8 +355,8 @@ a:focus {
 
 .wrapper {
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    align-items: center;
     margin: 0 2rem;
     flex-grow: 1;
     width: 100%;
@@ -357,9 +365,12 @@ a:focus {
 .wrapper--content-centered {
     justify-content: center;
 }
-
 .wrapper--menu-bar {
     justify-content: space-between;
+}
+.wrapper--about {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .hidden {
