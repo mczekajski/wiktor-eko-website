@@ -21,17 +21,10 @@
     }
 
     .banner__window {
-        position: absolute;
-        align-items: flex-start;
-        justify-content: space-around;
-        background-color: rgba(255, 255, 255, 0.85);
         width: 600px;
         min-height: 35rem;
         right: 10vw;
         top: 15%;
-        padding: 3rem;
-        border: 0;
-        z-index: 1;
     }
 
     .banner__description {

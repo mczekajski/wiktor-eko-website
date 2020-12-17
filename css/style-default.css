@@ -48,6 +48,10 @@ a:focus {
     max-width: 1300px;
 }
 
+.banner {
+    z-index: -1;
+}
+
 .banner__buttons-container {
     width: 100%;
 }
@@ -173,6 +177,7 @@ a:focus {
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .header__contactData {
