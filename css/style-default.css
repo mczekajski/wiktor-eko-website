@@ -48,16 +48,13 @@ a:focus {
     max-width: 1300px;
 }
 
-.banner {
-    z-index: -1;
-}
-
 .banner__buttons-container {
     width: 100%;
 }
 
 .banner__video {
     width: 100%;
+    z-index: -1;
 }
 
 .banner__window {
