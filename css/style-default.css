@@ -54,6 +54,7 @@ a:focus {
 
 .banner__video {
     width: 100%;
+    z-index: -1;
 }
 
 .banner__window {
@@ -173,6 +174,7 @@ a:focus {
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 .header__contactData {
