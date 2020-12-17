@@ -1,0 +1,12 @@
+@media only screen and (min-width: 601px) {
+    .banner__buttons-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner__button {
+        margin: 1rem;
+        width: 22rem;
+    }
+}

@@ -1,5 +1,36 @@
 @media only screen and (min-width: 769px) {
 
+    .banner {
+        position: relative;
+    }
+
+    .banner__window {
+        position: absolute;
+        align-items: flex-start;
+        justify-content: space-around;
+        background-color: rgba(255, 255, 255, 0.85);
+        width: 700px;
+        min-height: 20rem;
+        right: 5vw;
+        top: 20%;
+        padding: 3rem;
+        border: 0;
+        z-index: 1;
+    }
+
+    .banner__button {
+        margin-left: 0;
+        margin-right: 2rem;
+    }
+
+    .banner__description {
+        display: none;
+    }
+
+    .banner__buttons-container {
+        justify-content: flex-start;
+    }
+
     .header__contactData {
         display: flex;
         padding-left: 10px;

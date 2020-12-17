@@ -4,25 +4,21 @@
     --light-text-color: #777777;
     --light-border: #eaeaea;
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     width: 100vw;
     max-width: 100%;
     font-size: 62.5%;
 }
-
 div, img {
     display: block;
 }
-
 a:focus {
-    outline: thin dotted;
+    outline: thin dotted var(--main-color);
 }
 
 .page {
@@ -52,6 +48,10 @@ a:focus {
     max-width: 1300px;
 }
 
+.banner__buttons-container {
+    width: 100%;
+}
+
 .banner__video {
     width: 100%;
 }
@@ -61,7 +61,7 @@ a:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 3rem 2rem;
     border-bottom: 1px solid var(--light-border);
 }
 
@@ -80,12 +80,12 @@ a:focus {
     text-align: center;
     text-decoration: none;
     padding: 10px 30px;
-    margin: 10px;
     cursor: pointer;
     transition: .5s;
     width: 100%;
     outline: none;
     box-shadow: none;
+    margin-top: 2rem;
 }
 
 .btn--small {
@@ -211,7 +211,7 @@ a:focus {
     left: 0;
     line-height: 4rem;
     list-style: none;
-    z-index: 1;
+    z-index: 2;
     padding: 1rem 0 1rem 0;
     border-bottom: 1px solid var(--light-border);
 }
